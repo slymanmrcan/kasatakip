@@ -7,6 +7,8 @@ import { useEffect } from 'react';
 import 'react-native-reanimated';
 
 import { useColorScheme } from '@/components/useColorScheme';
+import { initDB } from '@/db/database';
+import useItemStore from '@/store/items';
 
 export {
   // Catch any errors thrown by the Layout component.
@@ -32,9 +34,12 @@ export default function RootLayout() {
     if (error) throw error;
   }, [error]);
 
+  const fetchItems = useItemStore((state) => state.fetchItems);
   useEffect(() => {
     if (loaded) {
       SplashScreen.hideAsync();
+      initDB();
+      fetchItems();
     }
   }, [loaded]);
 

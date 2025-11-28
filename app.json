@@ -23,7 +23,10 @@
       },
       "edgeToEdgeEnabled": true,
       "predictiveBackGestureEnabled": false,
-      "package": "com.smtechlab.kasatakip"
+      "package": "com.smtechlab.kasatakip",
+      "permissions": [
+        "android.permission.CAMERA"
+      ]
     },
     "web": {
       "bundler": "metro",
@@ -32,7 +35,8 @@
     },
     "plugins": [
       "expo-router",
-      "expo-sqlite"
+      "expo-sqlite",
+      "react-native-vision-camera"
     ],
     "experiments": {
       "typedRoutes": true
