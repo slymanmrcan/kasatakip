@@ -11,12 +11,21 @@ export default function TabLayout() {
       screenOptions={{
         headerShown: false,
         tabBarActiveTintColor: Colors[colorScheme ?? "light"].tint,
+        tabBarInactiveTintColor: "#7A7A7A",
+        tabBarStyle: {
+          backgroundColor: colorScheme === "dark" ? "#0a0a0a" : "#ffffff",
+          borderTopColor: colorScheme === "dark" ? "#1f1f1f" : "#e0e0e0",
+        },
+        tabBarLabelStyle: {
+          fontWeight: "600",
+          fontSize: 12,
+        },
       }}
     >
       <Tabs.Screen
         name="index"
         options={{
-          title: "Scan",
+          title: "Tara",
           tabBarIcon: ({ color, focused }) => (
             <TabBarIcon
               name={focused ? "scan" : "scan-outline"}
@@ -28,7 +37,7 @@ export default function TabLayout() {
       <Tabs.Screen
         name="list"
         options={{
-          title: "List",
+          title: "Listeler",
           tabBarIcon: ({ color, focused }) => (
             <TabBarIcon
               name={focused ? "list" : "list-outline"}
@@ -40,7 +49,7 @@ export default function TabLayout() {
       <Tabs.Screen
         name="total"
         options={{
-          title: "Total",
+          title: "Toplam",
           tabBarIcon: ({ color, focused }) => (
             <TabBarIcon
               name={focused ? "calculator" : "calculator-outline"}
