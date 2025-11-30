@@ -114,7 +114,7 @@ export default function ScanScreen() {
 
         FileSystem.deleteAsync(uri, { idempotent: true }).catch(() => {});
       } catch (error) {
-        console.log("OCR Error skipping frame");
+        // Sessiz hata yönetimi
       } finally {
         isProcessingRef.current = false;
       }

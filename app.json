@@ -31,8 +31,7 @@
         "react-native-vision-camera",
         {
           "enableFrameProcessors": true,
-          "cameraPermission": "Allow this app to use the camera.",
-          "microphonePermission": "Allow this app to use the microphone."
+          "cameraPermission": "KasaTakip, fişleri ve etiketleri taramak için kameranızı kullanmak istiyor."
         }
       ]
     ],
