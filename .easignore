@@ -1,0 +1,11 @@
+# Ignore build artifacts
+*.apk
+*.aab
+*.ipa
+
+# Ignore node_modules
+node_modules/
+
+# Ignore other large files or directories
+.expo/
+.DS_Store
