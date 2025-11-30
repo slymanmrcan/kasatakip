@@ -64,3 +64,4 @@ CREATE TABLE IF NOT EXISTS shopping_items (
 - Seanslar paralel tutulabilir; chip ile seçim yapıldığında yeni ürünler o seansa yazılır.
 - Tema renkleri için `constants/Colors.ts` kullanılır.
  - Kaydet sonrası form altındaki mesaj “Kaydedildi” durumunu gösterir; fiyat geçersiz veya hata durumunda uyarı verir.
+ 
