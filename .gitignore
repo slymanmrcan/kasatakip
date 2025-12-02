@@ -40,4 +40,33 @@ yarn-error.*
 /ios
 /android
 
+# Build outputs
 *.apk
+*.aab
+*.ipa
+build-*.apk
+build-*.aab
+
+# EAS
+.eas-build-pre-install.sh
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Test coverage
+coverage/
+
+# Temporary files
+tmp/
+temp/
