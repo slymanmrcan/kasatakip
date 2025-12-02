@@ -10,7 +10,7 @@ export interface Session {
 export interface Item {
   id: number;
   session_id: number;
-  product_name: string;
+  product_name: string | null;
   price: number;
   quantity: number;
   created_at: string;

@@ -2,7 +2,7 @@
   "expo": {
     "name": "kasatakip",
     "slug": "kasatakip",
-    "version": "1.0.0",
+    "version": "1.0.2",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
     "scheme": "kasatakip",
@@ -21,27 +21,16 @@
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "permissions": ["android.permission.CAMERA"],
       "package": "com.smtechlab.kasatakip"
     },
     "plugins": [
       "expo-router",
-      "expo-sqlite",
-      [
-        "react-native-vision-camera",
-        {
-          "enableFrameProcessors": true,
-          "cameraPermission": "KasaTakip, fişleri ve etiketleri taramak için kameranızı kullanmak istiyor."
-        }
-      ]
+      "expo-sqlite"
     ],
     "experiments": {
       "typedRoutes": true
     },
     "extra": {
-      "visionCamera": {
-        "enableFrameProcessors": true
-      },
       "router": {},
       "eas": {
         "projectId": "b78ff1d5-ceaf-4fd2-8b98-c06693d4a2c8"

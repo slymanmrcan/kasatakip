@@ -110,7 +110,7 @@ export default function ListScreen() {
           items.map((it, index) => (
             <View key={it.id} style={[styles.itemRow, index !== items.length - 1 && { borderBottomWidth: 1, borderBottomColor: colorScheme === 'dark' ? '#2c2c2e' : '#f3f4f6' }]}>
               <View style={styles.itemInfo}>
-                <Text style={[styles.itemName, { color: colors.text }]}>{it.product_name}</Text>
+                <Text style={[styles.itemName, { color: colors.text }]}>{it.product_name || "Ürün"}</Text>
                 <Text style={[styles.itemMeta, { color: colors.tabIconDefault }]}>
                   {it.quantity} x {it.price.toFixed(2)} ₺
                 </Text>

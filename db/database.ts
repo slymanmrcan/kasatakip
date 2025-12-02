@@ -14,7 +14,7 @@ const initDB = () => {
     CREATE TABLE IF NOT EXISTS shopping_items (
       id INTEGER PRIMARY KEY AUTOINCREMENT,
       session_id INTEGER NOT NULL,
-      product_name TEXT NOT NULL,
+      product_name TEXT,
       price REAL NOT NULL,
       quantity INTEGER NOT NULL DEFAULT 1,
       created_at DATETIME DEFAULT CURRENT_TIMESTAMP,

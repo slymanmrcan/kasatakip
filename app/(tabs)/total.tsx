@@ -69,7 +69,7 @@ export default function TotalScreen() {
                             <Ionicons name="pricetag" size={20} color={colors.tint} />
                         </View>
                         <View style={styles.itemDetails}>
-                            <Text style={[styles.itemName, { color: colors.text }]}>{item.product_name}</Text>
+                            <Text style={[styles.itemName, { color: colors.text }]}>{item.product_name || "Ürün"}</Text>
                             <Text style={[styles.itemQuantity, { color: colors.tabIconDefault }]}>{item.quantity} adet x {item.price.toFixed(2)} ₺</Text>
                         </View>
                         <Text style={[styles.itemTotal, { color: colors.text }]}>{(item.price * item.quantity).toFixed(2)} ₺</Text>
